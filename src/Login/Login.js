@@ -1,53 +1,54 @@
 import React, {useState} from 'react'
 import {createUserWithEmailAndPassword, signInWithEmailAndPassword,onAuthStateChanged, signOut} from 'firebase/auth';
 import {auth} from '../Firebase/firebase-config';
-
+import {Link} from 'react-router-dom';
+import './LoginStyle.css'
 function Login(){
 
-    const [registerEmail, setRegisterEmail] = useState("");
-    const [registerPassword, setRegisterPassword] = useState("");
-    const [loginEmail, setLoginEmail] = useState("");
-    const [loginPassword, setLoginPassword] = useState("");
+    // const [registerEmail, setRegisterEmail] = useState("");
+    // const [registerPassword, setRegisterPassword] = useState("");
+    // const [loginEmail, setLoginEmail] = useState("");
+    // const [loginPassword, setLoginPassword] = useState("");
   
-    const [user, setUser] = useState({});
+    // const [user, setUser] = useState({});
   
-    onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
-    });
+    // onAuthStateChanged(auth, (currentUser) => {
+    //   setUser(currentUser);
+    // });
   
-    const register = async () => {
-      try {
-        const user = await createUserWithEmailAndPassword(
-          auth,
-          registerEmail,
-          registerPassword
-        );
-        console.log(user);
-      } catch (error) {
-        console.log(error.message);
-      }
-    };
+    // const register = async () => {
+    //   try {
+    //     const user = await createUserWithEmailAndPassword(
+    //       auth,
+    //       registerEmail,
+    //       registerPassword
+    //     );
+    //     console.log(user);
+    //   } catch (error) {
+    //     console.log(error.message);
+    //   }
+    // };
   
-    const login = async () => {
-      try {
-        const user = await signInWithEmailAndPassword(
-          auth,
-          loginEmail,
-          loginPassword
-        );
-        console.log(user);
-      } catch (error) {
-        console.log(error.message);
-      }
-    };
+    // const login = async () => {
+    //   try {
+    //     const user = await signInWithEmailAndPassword(
+    //       auth,
+    //       loginEmail,
+    //       loginPassword
+    //     );
+    //     console.log(user);
+    //   } catch (error) {
+    //     console.log(error.message);
+    //   }
+    // };
   
-    const logout = async () => {
-      await signOut(auth);
-    };
+    // const logout = async () => {
+    //   await signOut(auth);
+    // };
   
     return (
       <div className="App">
-        <div>
+        {/* <div>
           <h3> Register User </h3>
           <input
             placeholder="Email"
@@ -86,7 +87,14 @@ function Login(){
         <h4> User Logged In: </h4>
         {user?.email}
   
-        <button onClick={logout}> Sign Out </button>
+        <button onClick={logout}> Sign Out </button> */}
+        <form>
+          <label>Email:</label>
+          <input type = "email" required/>
+          <label>Password:</label>
+          <input type = "password" required/>
+          <label className='not-admin'>NOT AN ADMIN?  <Link to = "/dashboard">Click here to continue</Link>  </label>
+        </form>
       </div>
     );
 }
