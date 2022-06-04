@@ -1,0 +1,109 @@
+.nrTavolines{
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    margin: auto;
+}
+
+.nrTavolines:hover{
+    transition: 0.3s ease-in-out; 
+    color: white;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tavolina1 {
+    display: flex;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.tavolina1:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #456C86;
+}
+.tavolina2 {
+    display: flex;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+.tavolina2:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #456C86;
+}
+.tavolina3 {
+    display: flex;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.tavolina3:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #456C86;
+}
+.tavolina4 {
+    display: flex;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.tavolina4:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #456C86;
+}
+
+
+.tavolina5 {
+    display: flex;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.tavolina5:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #456C86;
+}
+.tavolina6 {
+    display: flex;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.tavolina6:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #456C86;
+}
+.tavolina7 {
+    display: flex;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.tavolina7:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #456C86;
+}

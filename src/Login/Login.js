@@ -92,7 +92,7 @@ function Login(){
           <label>Email:</label>
           <input type = "email" required/>
           <label>Password:</label>
-          <input type = "password" required/>
+          <input type = "password" required/> 
           <label className='not-admin'>NOT AN ADMIN?  <Link to = "/dashboard">Click here to continue</Link>  </label>
         </form>
       </div>
